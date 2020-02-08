@@ -142,7 +142,7 @@
   :init
   (add-hook 'dap-stopped-hook
           (lambda (arg) (call-interactively #'hydra-go/body)))
-  :hydra (hydra-go (:color pink :hint nil :foreign-keys warn)
+  :hydra (hydra-go (:color pink :hint nil :foreign-keys run)
   "
    _n_: Next       _c_: Continue _g_: goroutines      _i_: break log
    _s_: Step in    _o_: Step out _k_: break condition _h_: break hit condition
