@@ -171,8 +171,12 @@
   ;;(setq fit-window-to-buffer-horizontally t)
   ;;(setq window-resize-pixelwise t)
   (require 'dap-hydra)
-  (require 'dap-go)		; download and expand vscode-go-extenstion to the =~/.extensions/go=
-  (dap-go-setup)
+  ;; old version 
+  ;;  (require 'dap-go)		; download and expand vscode-go-extenstion to the =~/.extensions/go=
+  ;;  (dap-go-setup)
+  ;; new version
+  (require 'dap-dlv-go)
+	     
   (use-package dap-ui
     :ensure nil
     :config
